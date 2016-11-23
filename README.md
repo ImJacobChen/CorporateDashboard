@@ -1,7 +1,6 @@
 # Corporate-dashboard
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a Coporate Dashboard app made with dummy data for my Udacity Nanodegree.
 
 ## Prerequisites
 
