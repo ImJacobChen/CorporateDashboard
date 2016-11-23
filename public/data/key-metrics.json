@@ -1,0 +1,30 @@
+{
+  "payingCustomersData": {
+  	"January": "15",
+  	"February": "24",
+  	"March": "28",
+  	"April": "32",
+  	"May": "29",
+  	"June": "54",
+  	"July": "50",
+  	"August": "82",
+  	"September": "86",
+  	"October": "66",
+  	"November": "76",
+  	"December": "56"
+  },
+  "reportedIssuesData": {
+  	"January": "15",
+  	"February": "24",
+  	"March": "19",
+  	"April": "34",
+  	"May": "6",
+  	"June": "22",
+  	"July": "2",
+  	"August": "7",
+  	"September": "9",
+  	"October": "16",
+  	"November": "22",
+  	"December": "12"
+  }
+}

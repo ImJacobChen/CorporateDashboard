@@ -1,0 +1,53 @@
+<div class="content">
+	<h6>Filter</h6>
+    <div>
+        <label for="selectCountry">Filter by country</label>
+        <select onchange={{action "filterCountry" value="target.value"}} id="selectCountry">
+            <option value="all">All</option>
+            <option value="uk">UK</option>
+            <option value="usa">USA</option>
+            <option value="niger">Niger</option>
+        </select>
+
+        <label for="sortBy">SortBy</label>
+        <select onchange={{action "sortBy" value="target.value"}} id="sortBy">
+            <option value="default">Default</option>
+            <option value="priorityAsc">Priority Ascending</option>
+            <option value="priorityDesc">Priority Descending</option>
+        </select>
+    </div>
+</div>
+<div class="content table-responsive table-full-width">
+    <table class="table table-striped">
+        <thead>
+            <th>ID</th>
+        	<th>Name</th>
+        	<th>Priority</th>
+        	<th>Location</th>
+        	<th>Description</th>
+        	<th>Done</th>
+        </thead>
+        <tbody>
+        	{{#each filteredList as |issue|}}
+        		<tr>
+                	<td>{{issue.id}}</td>
+                	<td>{{issue.name}}</td>
+                	<td>{{issue.priority}}</td>
+                	<td>{{issue.location}}</td>
+                	<td>{{issue.description}}</td>
+                	<td><button><i class="ti-check">Done</i></button></td>
+                </tr>
+            {{else}}
+            	<tr>
+                    <td>No problems here right now</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        	{{/each}}   
+        </tbody>
+    </table>
+</div>
+{{yield}}
