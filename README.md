@@ -32,6 +32,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember test`
 * `ember test --server`
+* `ember server --live-reload=false` for polling testing
 
 ### Building
 

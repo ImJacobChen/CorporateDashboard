@@ -3,26 +3,23 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 	
 	filterBy: 'all',
-	sortBy: 'priority',
+	sortBy: 'default',
 
 	filters: {
 		all: function() {
 			return true;
 		},
-		uk: function(issue) {
-			return issue.location === 'UK';
+		open: function(issue) {
+			return issue.openclosed === "open";
 		},
-		usa: function(issue) {
-			return issue.location === 'USA';
-		},
-		niger: function(issue) {
-			return issue.location === 'Niger';
-		},
+		closed: function(issue) {
+			return issue.openclosed === "closed";
+		}
 	},
 	sorters: {
 		default: function() {},
-		priorityAsc: function(a, b) {return a.priority - b.priority;},
-		priorityDesc: function(a, b) {return b.priority - a.priority;}
+		recent: function(a, b) {return a.submitted - b.submitted;},
+		oldest: function(a, b) {return b.submitted - a.submitted;}
 	},
 
 	filteredList: function() {
@@ -32,11 +29,11 @@ export default Ember.Component.extend({
 	}.property('list', 'filterBy', 'sortBy'),
 
 	actions: {
-		filterCountry: function(value) {
+		filter: function(value) {
 			this.set('filterBy', value);
 		},
-		sortBy: function(value) {
+		sort: function(value) {
 			this.set('sortBy', value);
-		}
+		},
 	}
 });

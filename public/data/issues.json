@@ -1,23 +1,29 @@
 [
     {
-    	"id": 10001,
-    	"name": "Dakota Rice",
-    	"priority": 5,
-    	"location": "Niger",
-    	"description": "Emails won't send"
+        "submitted": 1480077032257,
+        "name": "Dakota Rice",
+        "email": "dakotarice@hotmail.com",
+        "description": "Emails won't send",
+        "openclosed": "open",
+        "closed": false,
+        "employeeName": "Dakota Rice" 
     },
     {
-    	"id": 10002,
-    	"name": "Manny Reynolds",
-    	"priority": 2,
-    	"location": "UK",
-    	"description": "Problems logging in"
+        "submitted": 1480077171560,
+        "name": "Manny Reynolds",
+        "email": "mannyreynolds@gmail.com",
+        "description": "Problems logging in",
+        "openclosed": "open",
+        "closed": false,
+        "employeeName": "Manny Reynolds" 
     },
     {
-    	"id": 10003,
-    	"name": "Hilldene Christ",
-    	"priority": 3,
-    	"location": "USA",
-    	"description": "Error working with input types"
+        "submitted": 1480077222201,
+        "name": "Hilldene Christ",
+        "email": "hilldenechrist@outlook.com",
+        "description": "Error working with input types",
+        "openclosed": "closed",
+        "closed": 1480077264325,
+        "employeeName": "Manny Reynolds" 
     }
 ]
