@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'corporate-dashboard',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/CorporateDashboard/docs',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
