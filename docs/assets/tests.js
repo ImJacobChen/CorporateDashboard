@@ -31,7 +31,7 @@ define('corporate-dashboard/tests/custom-objects/pollster.jshint', ['exports'], 
   QUnit.module('JSHint | custom-objects/pollster.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'custom-objects/pollster.js should pass jshint.\ncustom-objects/pollster.js: line 24, col 40, Missing semicolon.\n\n1 error');
+    assert.ok(true, 'custom-objects/pollster.js should pass jshint.');
   });
 });
 define('corporate-dashboard/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {

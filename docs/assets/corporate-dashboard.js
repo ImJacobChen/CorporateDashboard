@@ -1267,11 +1267,11 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
           "loc": {
             "source": null,
             "start": {
-              "line": 31,
+              "line": 30,
               "column": 9
             },
             "end": {
-              "line": 41,
+              "line": 40,
               "column": 12
             }
           },
@@ -1347,7 +1347,7 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
           morphs[6] = dom.createMorphAt(dom.childAt(element0, [13]), 0, 0);
           return morphs;
         },
-        statements: [["content", "issue.submitted", ["loc", [null, [33, 21], [33, 40]]]], ["content", "issue.name", ["loc", [null, [34, 21], [34, 35]]]], ["content", "issue.email", ["loc", [null, [35, 21], [35, 36]]]], ["content", "issue.description", ["loc", [null, [36, 21], [36, 42]]]], ["content", "issue.openclosed", ["loc", [null, [37, 21], [37, 41]]]], ["content", "issue.closed", ["loc", [null, [38, 24], [38, 40]]]], ["content", "issue.employeeName", ["loc", [null, [39, 21], [39, 43]]]]],
+        statements: [["content", "issue.submitted", ["loc", [null, [32, 21], [32, 40]]]], ["content", "issue.name", ["loc", [null, [33, 21], [33, 35]]]], ["content", "issue.email", ["loc", [null, [34, 21], [34, 36]]]], ["content", "issue.description", ["loc", [null, [35, 21], [35, 42]]]], ["content", "issue.openclosed", ["loc", [null, [36, 21], [36, 41]]]], ["content", "issue.closed", ["loc", [null, [37, 24], [37, 40]]]], ["content", "issue.employeeName", ["loc", [null, [38, 21], [38, 43]]]]],
         locals: ["issue"],
         templates: []
       };
@@ -1360,11 +1360,11 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
           "loc": {
             "source": null,
             "start": {
-              "line": 41,
+              "line": 40,
               "column": 12
             },
             "end": {
-              "line": 50,
+              "line": 49,
               "column": 9
             }
           },
@@ -1434,7 +1434,7 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
             "column": 0
           },
           "end": {
-            "line": 55,
+            "line": 54,
             "column": 0
           }
         },
@@ -1448,12 +1448,6 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createElement("div");
         dom.setAttribute(el1, "class", "content");
-        var el2 = dom.createTextNode("\n	");
-        dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h6");
-        var el3 = dom.createTextNode("Filter");
-        dom.appendChild(el2, el3);
-        dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n    ");
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
@@ -1614,7 +1608,7 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
         return el0;
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var element1 = dom.childAt(fragment, [0, 3]);
+        var element1 = dom.childAt(fragment, [0, 1]);
         var element2 = dom.childAt(element1, [3]);
         var element3 = dom.childAt(element1, [7]);
         var morphs = new Array(4);
@@ -1624,7 +1618,7 @@ define("corporate-dashboard/templates/components/filterable-issues-list", ["expo
         morphs[3] = dom.createMorphAt(fragment, 4, 4, contextualElement);
         return morphs;
       },
-      statements: [["attribute", "onchange", ["subexpr", "action", ["filter"], ["value", "target.value"], ["loc", [null, [5, 25], [5, 65]]]]], ["attribute", "onchange", ["subexpr", "action", ["sort"], ["value", "target.value"], ["loc", [null, [12, 25], [12, 63]]]]], ["block", "each", [["get", "filteredList", ["loc", [null, [31, 17], [31, 29]]]]], [], 0, 1, ["loc", [null, [31, 9], [50, 18]]]], ["content", "yield", ["loc", [null, [54, 0], [54, 9]]]]],
+      statements: [["attribute", "onchange", ["subexpr", "action", ["filter"], ["value", "target.value"], ["loc", [null, [4, 25], [4, 65]]]]], ["attribute", "onchange", ["subexpr", "action", ["sort"], ["value", "target.value"], ["loc", [null, [11, 25], [11, 63]]]]], ["block", "each", [["get", "filteredList", ["loc", [null, [30, 17], [30, 29]]]]], [], 0, 1, ["loc", [null, [30, 9], [49, 18]]]], ["content", "yield", ["loc", [null, [53, 0], [53, 9]]]]],
       locals: [],
       templates: [child0, child1]
     };
@@ -1640,11 +1634,11 @@ define("corporate-dashboard/templates/data", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 9,
+              "line": 8,
               "column": 16
             },
             "end": {
-              "line": 10,
+              "line": 9,
               "column": 16
             }
           },
@@ -1680,7 +1674,7 @@ define("corporate-dashboard/templates/data", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 16,
+            "line": 15,
             "column": 0
           }
         },
@@ -1717,13 +1711,6 @@ define("corporate-dashboard/templates/data", ["exports"], function (exports) {
         var el7 = dom.createTextNode("Current Issues");
         dom.appendChild(el6, el7);
         dom.appendChild(el5, el6);
-        var el6 = dom.createTextNode("\n                    ");
-        dom.appendChild(el5, el6);
-        var el6 = dom.createElement("p");
-        dom.setAttribute(el6, "class", "category");
-        var el7 = dom.createTextNode("Current Open Issues");
-        dom.appendChild(el6, el7);
-        dom.appendChild(el5, el6);
         var el6 = dom.createTextNode("\n                ");
         dom.appendChild(el5, el6);
         dom.appendChild(el4, el5);
@@ -1757,7 +1744,7 @@ define("corporate-dashboard/templates/data", ["exports"], function (exports) {
         morphs[1] = dom.createMorphAt(fragment, 2, 2, contextualElement);
         return morphs;
       },
-      statements: [["block", "filterable-issues-list", [], ["list", ["subexpr", "@mut", [["get", "model", ["loc", [null, [9, 47], [9, 52]]]]], [], []]], 0, null, ["loc", [null, [9, 16], [10, 43]]]], ["content", "outlet", ["loc", [null, [15, 0], [15, 10]]]]],
+      statements: [["block", "filterable-issues-list", [], ["list", ["subexpr", "@mut", [["get", "model", ["loc", [null, [8, 47], [8, 52]]]]], [], []]], 0, null, ["loc", [null, [8, 16], [9, 43]]]], ["content", "outlet", ["loc", [null, [14, 0], [14, 10]]]]],
       locals: [],
       templates: [child0]
     };
@@ -3092,7 +3079,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("corporate-dashboard/app")["default"].create({"name":"corporate-dashboard","version":"0.0.0+f97803aa"});
+  require("corporate-dashboard/app")["default"].create({"name":"corporate-dashboard","version":"0.0.0+cf5bb524"});
 }
 
 /* jshint ignore:end */

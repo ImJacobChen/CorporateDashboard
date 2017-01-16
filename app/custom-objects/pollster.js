@@ -21,7 +21,7 @@ export default Ember.Object.extend({
 
 	// Starts the pollster, i.e. executes the 'onPoll' function every interval.
 	start: function() {
-		console.log('Starting polling')
+		console.log('Starting polling');
 		this.set('timer', this.schedule(this.get('onPoll')));
 	},
 
